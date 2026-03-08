@@ -28,18 +28,6 @@ width:80%;
 box-shadow:0 0 10px #ffcc00;
 }
 
-.btn{
-display:block;
-width:250px;
-margin:15px auto;
-padding:12px;
-background:#ffcc00;
-color:black;
-font-weight:bold;
-border-radius:8px;
-text-decoration:none;
-}
-
 img{
 width:250px;
 margin:10px;
@@ -69,13 +57,15 @@ border-radius:10px;
 <img src="zippo2.jpg">
 <img src="zippo3.jpg">
 
-<a class="btn" href="tel:0903531673">📞 Gọi ngay: 0903531673</a>
-
-<a class="btn" href="#">📘 Facebook</a>
-
-<audio autoplay loop>
+<audio id="nhac" autoplay loop>
 <source src="nhac.mp3" type="audio/mpeg">
 </audio>
+
+<script>
+document.addEventListener("click", function(){
+document.getElementById("nhac").play();
+});
+</script>
 
 </body>
 </html>
